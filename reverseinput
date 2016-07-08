@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class Try {
+
+	public static void main(String[] args) {
+		
+				
+		//Create the scanner object
+		Scanner input = new Scanner(System.in);
+		
+		//Instance variable
+		String inputStr;
+	      String outputStr;
+	      
+	      //Output the prompt   
+	      System.out.println("Hello, Grand Circus! \n Enter a whole number to reverse: ");  
+	      
+	      //Wait for user to enter number
+	      inputStr = input.next();  
+	      outputStr = reverseInput(inputStr);  
+	      
+	      //Tell user their reversed number
+	      System.out.println("Your number reversed is: " + outputStr);
+	     	         
+	   }  
+	      
+	   public static String reverseInput(String number)  
+	   {  
+	      String reverseInput = String.valueOf(number);   
+	      String actualDigit = "";  
+	       
+	      
+	      for (int num = reverseInput.length() - 1; num >= 0; num--)  
+	      {  
+	         actualDigit = actualDigit + reverseInput.charAt(num);  
+	      }  
+	         
+	      String revDigit = actualDigit;  
+	      return revDigit;  
+	   } 
+
+	}
