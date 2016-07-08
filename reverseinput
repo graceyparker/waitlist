@@ -8,7 +8,7 @@ public class Try {
 		//Create the scanner object
 		Scanner input = new Scanner(System.in);
 		
-		//Instance variable
+		
 		String inputStr;
 	      String outputStr;
 	      
